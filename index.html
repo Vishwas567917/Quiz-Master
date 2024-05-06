@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Master</title>
+    <!-- CSS for styling and responsiveness -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Master</h1>
+        <div class="quiz-section">
+            <h2 id="question-text">Question will go here</h2>
+            <ul id="answer-list" class="answer-list">
+                <!-- Answer choices will be dynamically generated here -->
+            </ul>
+            <div class="quiz-controls">
+                <button id="prev-btn" class="quiz-button" disabled>Previous</button>
+                <button id="next-btn" class="quiz-button" disabled>Next</button>
+                <button id="submit-btn" class="quiz-button">Submit Quiz</button>
+            </div>
+        </div>
+        <div id="result-section" class="result-section" style="display: none;">
+            <h2>Your Score: </h2>
+            <p id="final-score">0</p>
+            <button id="restart-btn" class="quiz-button">Restart Quiz</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
